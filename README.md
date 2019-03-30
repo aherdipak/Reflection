@@ -1,35 +1,28 @@
 # Reflection
 - How do I get a field using reflection?
 
-### \User_1.java
+### \Temp.java
 ```
-class User_1{
-	private String userName;
-	private int userAge;
-	private String fname;
-	public String getUserName() {
-		return userName;
+
+class Temp{
+	Human human;
+	byte byteVar = 5;
+    	short shortVar = 20;
+    	int intVar = 30;
+    	long longVar = 60;
+    	float floatVar = 20;
+   	double doubleVar = 20.123;
+    	boolean booleanVar = true;
+   	char charVar ='W';
+    	String str = "string";
+    
+	public Human getHuman() {
+		return human;
 	}
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setHuman(Human human) {
+		this.human = human;
 	}
-	public int getUserAge() {
-		return userAge;
-	}
-	public void setUserAge(int userAge) {
-		this.userAge = userAge;
-	}
-	public User_1(String userName,int userAge,String fname) {
-		this.userName=userName;
-		this.userAge=userAge;
-		this.fname = fname;
-	}
-	public User_1() {}
-	@Override
-	public String toString() {
-		return "userName=" + userName + ", userAge=" + userAge +", fname=" + fname ;
-	}
-	
+   
 }
 ```
 
