@@ -7,6 +7,7 @@ import java.util.Map;
 
 public class Test2 {
 
+	// CONVERT FILED VALUE DATATYPE
 	public Object convertDataTypeOfFiledValue(Field field,Object value) {
 		//System.out.println(field.getType().getName().substring(field.getType().getName().lastIndexOf(".")+1));
 		if(field.getType().getName().substring(field.getType().getName().lastIndexOf(".")+1).equalsIgnoreCase("String")) {
@@ -26,7 +27,7 @@ public class Test2 {
 			for (Field mField : mFields) {
 				mField.setAccessible(true);
 				if(mField.get(master)!= null)
-					masterValMap.put(mField.getName(), mField.get(master));
+					masterValMap.put(mField.getName(), mField.get(master)); // fieldName = FiledValue
 			}
 			
 			Class tclass = temp.getClass();
@@ -57,7 +58,7 @@ public class Test2 {
 		        System.out.println("Filed Name: "+field.getName() +"  --> "+field.get(obj));
 		        if (!field.getType().isPrimitive() && !field.getType().getName().contains("java.lang"))
 		        {
-		        	printFiledAndValue(field.get(obj));
+		        	printFiledAndValue(field.get(obj)); // calling same method
 		        }
 		    }
 	}
