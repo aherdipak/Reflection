@@ -13,8 +13,8 @@
  ```
 
 - How do I get a field name and value If Type Is Object with the annotation of javax.persistence.EmbeddedId(`@EmbeddedId`) using reflection?
-
 ```markdown
-  1.@EmbeddedId.md
+  1. @EmbeddedId.md
   
-```
+ ```
+
