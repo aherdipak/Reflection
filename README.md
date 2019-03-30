@@ -11,3 +11,5 @@
   1. CopyObject_FiledValue_another_object.md
   2. Test2.java
  ```
+
+- How do I get a field name and value If Type Is Object with the annotation of javax.persistence.EmbeddedId(`@EmbeddedId`) using reflection?
