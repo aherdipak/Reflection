@@ -1,50 +1,87 @@
 # Reflection
 - How do I get a field using reflection?
 
-### \pom.xml
+### \User_1.java
 ```
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.in28minutes</groupId>
-	<artifactId>in28Minutes-first-webapp</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
-
-	<dependencies>
-		<dependency>
-			<groupId>javax</groupId>
-			<artifactId>javaee-web-api</artifactId>
-			<version>6.0</version>
-			<scope>provided</scope>
-		</dependency>
-	</dependencies>
-
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.2</version>
-					<configuration>
-						<verbose>true</verbose>
-						<source>1.8</source>
-						<target>1.8</target>
-						<showWarnings>true</showWarnings>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.tomcat.maven</groupId>
-					<artifactId>tomcat7-maven-plugin</artifactId>
-					<version>2.2</version>
-					<configuration>
-						<path>/</path>
-						<contextReloadable>true</contextReloadable>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
-</project>
+class User_1{
+	private String userName;
+	private int userAge;
+	private String fname;
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public int getUserAge() {
+		return userAge;
+	}
+	public void setUserAge(int userAge) {
+		this.userAge = userAge;
+	}
+	public User_1(String userName,int userAge,String fname) {
+		this.userName=userName;
+		this.userAge=userAge;
+		this.fname = fname;
+	}
+	public User_1() {}
+	@Override
+	public String toString() {
+		return "userName=" + userName + ", userAge=" + userAge +", fname=" + fname ;
+	}
+	
+}
 ```
+
+### \User_2.java
+```
+
+class User_2{
+	private String userName;
+	private int userAge;
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public Integer getUserAge() {
+		return userAge;
+	}
+	public void setUserAge(int userAge) {
+		this.userAge = userAge;
+	}
+	@Override
+	public String toString() {
+		return "userName=" + userName + ", userAge=" + userAge ;
+	}
+}
+```
+
+### \User_2.java
+```
+
+class User_2{
+	private String userName;
+	private int userAge;
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public Integer getUserAge() {
+		return userAge;
+	}
+	public void setUserAge(int userAge) {
+		this.userAge = userAge;
+	}
+	@Override
+	public String toString() {
+		return "userName=" + userName + ", userAge=" + userAge ;
+	}
+}
+```
+
+
+
