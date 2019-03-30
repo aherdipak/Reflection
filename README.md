@@ -33,55 +33,6 @@ class User_1{
 }
 ```
 
-### \User_2.java
-```
-
-class User_2{
-	private String userName;
-	private int userAge;
-	public String getUserName() {
-		return userName;
-	}
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
-	public Integer getUserAge() {
-		return userAge;
-	}
-	public void setUserAge(int userAge) {
-		this.userAge = userAge;
-	}
-	@Override
-	public String toString() {
-		return "userName=" + userName + ", userAge=" + userAge ;
-	}
-}
-```
-
-### \User_2.java
-```
-
-class User_2{
-	private String userName;
-	private int userAge;
-	public String getUserName() {
-		return userName;
-	}
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
-	public Integer getUserAge() {
-		return userAge;
-	}
-	public void setUserAge(int userAge) {
-		this.userAge = userAge;
-	}
-	@Override
-	public String toString() {
-		return "userName=" + userName + ", userAge=" + userAge ;
-	}
-}
-```
 
 
 
